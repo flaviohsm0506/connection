@@ -86,8 +86,8 @@ canvas{
 /* ---- particles.js container ---- */
 
 #particles-js {
-    width: 99.999vw;
-    height: 90vh;
+    width: 99vw;
+    height: 96vh;
     background-color: #ea6c71;
     background-image: url('');
     background-size: cover;
