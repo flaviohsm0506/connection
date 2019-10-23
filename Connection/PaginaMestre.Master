@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMestre.master.cs" Inherits="Connection.PaginaMestre" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/folha.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/index.js"></script>
+	  <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,900&display=swap" rel="stylesheet"> 
+	  <link rel="stylesheet" href="css/materialize.css">
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+	  	   </script> 
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+   </head>
+</head>
+<body>
+     <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper indigo darken-4">
+            <a href="#" class="brand-logo left" style="margin: 20 auto 10 20"><img  width="180px" src="imagens/logobranco.png" alt="logo" ></a>
+            <ul class="right">
+              <li><a href="cadastroperfil.aspx">Cadastre-se</a></li>
+              <li><a href="login.aspx"> <i class="large material-icons">person</i></a></li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer class="page-footer indigo darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Interaja conosco!</h5>
+                <p class="grey-text text-lighten-4">
+				<a style="margin: 5px;" class="grey-text text-lighten-3" href="#!"><img style="a" src="imagens/face.png" alt="face"></a>
+				<a style="margin: 5px;" class="grey-text text-lighten-3" href="#!"><img style="a" src="imagens/instagram.png" alt="face"></a>
+				<a style="margin: 5px;" class="grey-text text-lighten-3" href="#!"><img style="a" src="imagens/whatsapp.png" alt="face"></a>
+				<a style="margin: 5px;" class="grey-text text-lighten-3" href="#!"><img style="a" src="imagens/email.png" alt="face"></a>
+				<a style="margin: 5px;" class="grey-text text-lighten-3" href="#!"><i class="icon-dollar"></i></a>
+				
+				
+				</p>
+              </div>
+             <div class="col l4 offset-l2 s12">
+                <h5 class="white-text" style="text-align: right"><a class="grey-text text-lighten-3" href="#top"><i class="medium material-icons">arrow_upward</i></a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Copyright © 2019 | Bruna e Flávio
+            </div>
+          </div>
+        </footer>
+	
+	      <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+		 
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('a[href="#top"]').fadeIn();
+				} else {
+					$('a[href="#top"]').fadeOut();
+				}
+			});
+
+			$('a[href="#top"]').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
+		});
+		
+      </script>
+
+</body>
+</html>
